@@ -76,8 +76,8 @@ let pconf = document.querySelector('.box-result p')
 
                 let extension = uploadedImage.split(".")[1]
                 if (!(["doc","docx","pdf"].includes(extension))){
-                    document.querySelector(".success-1 i").style.border = "1px solid limegreen"
-                    document.querySelector(".success-1 i").style.color = "limegreen"
+                    document.querySelector(".success-1 i").style.border = "1px solid DarkSlateGray"
+                    document.querySelector(".success-1 i").style.color = "DarkSlateGray"
                 }else{
                     document.querySelector(".success-1 i").style.border = "1px solid rgb(25,110,180)"
                     document.querySelector(".success-1 i").style.color = "rgb(25,110,180)"
