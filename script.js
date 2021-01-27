@@ -44,7 +44,7 @@ let progressBar =
         // initializePlant/Load model
         async function initializePlant() {
             let status = document.querySelector('.init_status')
-            status.innerHTML = 'Loading Model .... <span class="fa fa-spinner fa-spin"></span>'
+            status.innerHTML = 'Loading Plant Model .... <span class="fa fa-spinner fa-spin"></span>'
             model = await tf.loadLayersModel('./tensorflowjs-model/model.json');
             status.innerHTML = 'Plant Model Loaded Successfully  <span class="fa fa-check"></span>'
 
@@ -52,7 +52,7 @@ let progressBar =
         // initializeSoil/Load model
         async function initializeSoil() {
             let status = document.querySelector('.init_statusSoil')
-            status.innerHTML = 'Loading Model .... <span class="fa fa-spinner fa-spin"></span>'
+            status.innerHTML = 'Loading Soil Model .... <span class="fa fa-spinner fa-spin"></span>'
             soilmodel = await tf.loadLayersModel('./soilnet');
             status.innerHTML = 'Soil Model Loaded Successfully  <span class="fa fa-check"></span>'
 
