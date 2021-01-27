@@ -1,4 +1,5 @@
 let model;
+let soilmodel;
 let class_indices;
 let soil_classes;
 
@@ -52,7 +53,7 @@ let progressBar =
         async function initializeSoil() {
             let status = document.querySelector('.init_statusSoil')
             status.innerHTML = 'Loading Model .... <span class="fa fa-spinner fa-spin"></span>'
-            model = await tf.loadLayersModel('./soilnet/model.json');
+            soilmodel = await tf.loadLayersModel('./soilnet/model.json');
             status.innerHTML = 'Soil Model Loaded Successfully  <span class="fa fa-check"></span>'
 
         }
